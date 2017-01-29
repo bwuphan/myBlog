@@ -35,7 +35,8 @@
     "morgan": "^1.1.1",
     "mongoose": "^4.7.7",
     "bcrypt-nodejs": "0.0.3",
-    "bluebird": "^3.3.4"
+    "bluebird": "^3.3.4",
+    "webpack": "^1.14.0"
   },
   "devDependencies": {
     "babel-cli": "^6.6.5",

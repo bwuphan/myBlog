@@ -70,6 +70,12 @@ module.exports = function(grunt) {
       },
       babel: {
         command: 'babel . --out-dir compiled --presets=es2015,react --ignore=node_modules,compiled,server,Gruntfile.js --source-maps inline --watch'
+      },
+      push: {
+        command: 'git push'
+      },
+      herokuPush: {
+        command: 'git push heroku master'
       }
     }
   });
@@ -103,6 +109,8 @@ module.exports = function(grunt) {
     // add your production server task here
 
   });
+
+  grunt.registerTask('push', ['shell:push', 'shell:herokuPush']);
 
 
   // grunt.registerTask('deploy', function(n) {
